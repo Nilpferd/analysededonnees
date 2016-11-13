@@ -63,19 +63,6 @@ for(i in rownames(department))
 }
 rm(conditionL)
 
-#Normalize all the variables not to make a bias in distances ?
-#Careful with the last four departments which have several NA data
-#department_norm = department										#copies the dataframe
-#for(i in colnames(department_norm))
-#{
-#	department_norm[,i] <- department_norm[,i]/sum(na.omit(department_norm[,i]))
-#}
-#department_norm$POP0813 <- NULL									#deletes meaningless columns
-#department_norm$DENSITY13 <- NULL
-#department_norm$SUPERF_MOY <- NULL
-#View(department_norm)
-#rm(i)
-
 #Principal Component Analysis
 #Selection of actives individuals and variables, others will only be illustrative
 #Drop variables which are linear combination of others not to diminish the rank of the inertia matrix
@@ -94,6 +81,8 @@ res.pca = PCA(department[departmentsPCA,variablesPCA],
 							graph=F
 							)
 rm(departmentsPCA,variablesPCA)
+write.table(res.pca$eig,file="output_eigen.csv",sep=";")
+
 #Organization of the results in a list of matrixes
 axes = list()
 for(i in 1:ncp)
@@ -105,14 +94,20 @@ for(i in 1:ncp)
 	axes[[i]] = axe
 }
 View(axes)
-#Plot of the factor and individual maps
-plot(res.pca, axes = c(1,2), choix = "ind")
-plot(res.pca, axes = c(1,2), choix = "var")
-plot(res.pca, axes = c(2,3), choix = "ind")
-plot(res.pca, axes = c(2,3), choix = "var")
-plot(res.pca, axes = c(3,4), choix = "ind")
-plot(res.pca, axes = c(3,4), choix = "var")
+write.table(data.frame(axes),file="output_axes.csv",sep=";")
 
-#Select important variables on the inertia axes
-#labels(which(axes[[1]][,2]>=3,23))
+#Plot of the factor and individual maps
+pdf("Plots.pdf")
+	plot(res.pca, axes = c(1,2), choix = "ind")
+	plot(res.pca, axes = c(1,2), choix = "var")
+	plot(res.pca, axes = c(2,3), choix = "ind")
+	plot(res.pca, axes = c(2,3), choix = "var")
+	plot(res.pca, axes = c(3,4), choix = "ind")
+	plot(res.pca, axes = c(3,4), choix = "var")
+dev.off()
+
+#Command to execute : source(file = "Departements3.R")
+#Useful commands to study the results
+#res.pca$ind$coord[conditionL,"Dim.1"]
+#names(res.pca$ind$coord[conditionL,"Dim.1"])
 
