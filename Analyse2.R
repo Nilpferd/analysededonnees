@@ -99,7 +99,26 @@ View(department_quali)
 
 #MCA
 library(FactoMineR)
-res.mca = MCA(department_quali)
+res.mca = MCA(department_quali,ncp=4)
 plot.MCA(res.mca)
 
-#I still need to analyse the results. Adrien
+#100/24=4.16667% donc je conserve 4 dimensions
+#J'analyse 101 individus selon 24 variables.
+
+#write.csv(res.mca$var$contrib,file="../resultats/Analyse2_ACM_contrib.csv")
+
+#Encore une fois, je me permets de reprendre ton code Rodolphe
+ncp = 4
+
+axes = list()
+for(i in 1:ncp)
+{
+	columns = c(res.mca$var$coord[,i],res.mca$var$contrib[,i],res.mca$var$cos2[,i])
+	axe = matrix(data = columns,nrow = dim(res.mca$var$coord)[1],ncol = 3)
+	rownames(axe) = rownames(res.mca$var$coord)
+	colnames(axe) = c("Coord","Contr","Cos2")
+	axes[[i]] = axe
+}
+View(axes)
+write.table(data.frame(axes),file="../resultats/Analyse2_ACM_axes.csv",sep=";")
+
