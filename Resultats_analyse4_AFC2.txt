@@ -1,0 +1,19 @@
+24/11/16
+
+AFC chômeurs contre nombre d'établissements agricoles (P13_CHOM1564 et ETAZ14)
+
+Commentaires pré-étude :
+
+Je suis conscient que je compare des chiffres de 2013 pour le chômage et de 2014 pour les établissements agricoles.
+
+Je me souviens également de la remarque de Rodolphe sur le fait qu'il s'agit des sièges des entreprises 
+et donc qu'à cet égard Paris est la commune qui a le plus grand nombre d'établissements agricoles en France.
+
+En conséquence je vais retirer Paris, Lyon et Marseille.
+
+Commentaires sur les résultats :
+
+Très forte décorrélation ! 
+
+On a quand même une certaine proximité entre les classes des deux variables, mais ceci est probablement du plutôt
+à l'effet de taille des communes.
