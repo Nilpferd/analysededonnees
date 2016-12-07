@@ -102,7 +102,7 @@ View(table)
 				 row.w = table$WEIGHT,
 				 graph = TRUE
 				)
-	#Les résultats obtenus sont plus intéressants mais il ne faut pas oublier qu'ils porte sur
+	#Les résultats obtenus sont plus intéressants mais il ne faut pas oublier qu'ils portent sur
 	#des variables intensives (ramenées au nombre d'habitant) et donc qui ne sont plus des effectifs
 	#On peut reprendre les deux commandes ci-dessus et choisir les variables sur lesquelles opérer une
 	#ACP. Note au passage : ne pas intégrer la variable de normalisation P13_POP dans l'ACP. On essaie 
