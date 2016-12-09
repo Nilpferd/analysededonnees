@@ -1,0 +1,147 @@
+
+Classement par nombre d'habitants:
+L'intervalle 1 : nombre d'habitants entre 83 et 638 habitants.
+L'intervalle 2 : nombre d'habitants entre 638 et 4906 habitants.
+L'intervalle 3 : nombre d'habitants entre 4906 et 37719 habitants.
+L'intervalle 4 : nombre d'habitants entre 37719 et 290001 habitants.
+L'intervalle 5 : nombre d'habitants entre 290001 et 2229621 habitants.
+
+Classement par densité:
+L'intervalle 1 : densité entre 1 et 8 habitants par km carrés.
+L'intervalle 2 : densité entre 8 et 64 habitants par km carrés.
+L'intervalle 3 : densité entre 64 et 511 habitants par km carrés.
+L'intervalle 4 : densité entre 511 et 4083 habitants par km carrés.
+L'intervalle 5 : densité entre 4083 et 32633 habitants par km carrés.
+
+Classement par médiane du niveau de vie:
+L'intervalle 1 : médiane de niveau entre 10021 et 17267 euros par unités de consommation.
+L'intervalle 2 : médiane de niveau entre 17267 et 24513 euros par unités de consommation.
+L'intervalle 3 : médiane de niveau entre 24513 et 31759 euros par unités de consommation.
+L'intervalle 4 : médiane de niveau entre 31759 et 39005 euros par unités de consommation.
+L'intervalle 5 : médiane de niveau entre 39005 et 46251 euros par unités de consommation.
+
+Classement par nombre de chômeurs:
+L'intervalle 1 : nombre de chômeurs entre 1 et 11 chômeurs.
+L'intervalle 2 : nombre de chômeurs entre 11 et 116 chômeurs.
+L'intervalle 3 : nombre de chômeurs entre 116 et 1245 chômeurs.
+L'intervalle 4 : nombre de chômeurs entre 1245 et 13383 chômeurs.
+L'intervalle 5 : nombre de chômeurs entre 13383 et 143935 chômeurs.
+
+Classement par nombre de naissances:
+L'intervalle 1 : nombre de naissances entre 1 et 11 naissances.
+L'intervalle 2 : nombre de naissances entre 11 et 119 naissances.
+L'intervalle 3 : nombre de naissances entre 119 et 1289 naissances.
+L'intervalle 4 : nombre de naissances entre 1289 et 14018 naissances.
+L'intervalle 5 : nombre de naissances entre 14018 et 152521 naissances.
+
+Classement par nombre de décès:
+L'intervalle 1 : nombre de décès entre 1 et 10 décès.
+L'intervalle 2 : nombre de décès entre 10 et 87 décès.
+L'intervalle 3 : nombre de décès entre 87 et 808 décès.
+L'intervalle 4 : nombre de décès entre 808 et 7525 décès.
+L'intervalle 5 : nombre de décès entre 7525 et 70080 décès.
+
+Classement par nombre d'établissements actifs:
+L'intervalle 1 : nombre d'établissements actifs entre 1 et 15 établissements.
+L'intervalle 2 : nombre d'établissements actifs entre 15 et 199 établissements.
+L'intervalle 3 : nombre d'établissements actifs entre 199 et 2788 établissements.
+L'intervalle 4 : nombre d'établissements actifs entre 2788 et 39222 établissements.
+L'intervalle 5 : nombre d'établissements actifs entre 39222 et 551953 établissements.
+
+ANALYSE DE L'ACP Récapitulatif 
+Étape 1 - Sélection des axes :
+Seuil d'inertie : 10 %
+Axes retenus : 1 2 3 4 
+
+Étape 2 - Quelles variables expliquent les axes :
+Seuil d'inertie expliquée : 10 %
+Seuil de cosinus carré : 0.1 %
+Variables retenues sur l'axe 1 :
+	(-): MED13 
+	(+): DECE0813 SUPERF ETTOT14 NBMENFISC13 P13_LOG 
+Variables retenues sur l'axe 2 :
+	(-): TP6013 
+	(+): MED13 PIMP13 
+Variables retenues sur l'axe 3 :
+	(-):  
+	(+): ETTOT14 P13_EMPLT 
+Variables retenues sur l'axe 4 :
+	(-): DECE0813 P13_EMPLT 
+	(+): NAIS0813 SUPERF 
+Cf. les graphes des variables affichés.
+
+Étape 3 - Quelles classes individus contribuent le plus aux axes :
+Regarder les graphes directement.
+
+ANALYSE DE L'ACP Logement 
+Étape 1 - Sélection des axes :
+Seuil d'inertie : 25 %
+Axes retenus : 1 
+
+Étape 2 - Quelles variables expliquent les axes :
+Seuil d'inertie expliquée : 25 %
+Seuil de cosinus carré : 0.25 %
+Variables retenues sur l'axe 1 :
+	(-):  
+	(+): P13_LOGVAC P13_RP 
+Cf. les graphes des variables affichés.
+
+Étape 3 - Quelles classes individus contribuent le plus aux axes :
+Regarder les graphes directement.
+
+ANALYSE DE L'ACP Emploi 
+Étape 1 - Sélection des axes :
+Seuil d'inertie : 20 %
+Axes retenus : 1 2 
+
+Étape 2 - Quelles variables expliquent les axes :
+Seuil d'inertie expliquée : 20 %
+Seuil de cosinus carré : 0.2 %
+Variables retenues sur l'axe 1 :
+	(-):  
+	(+): P13_EMPLT_SAL P13_EMPLT 
+Variables retenues sur l'axe 2 :
+	(-):  
+	(+): P13_ACT1564 P13_POP1564 
+Cf. les graphes des variables affichés.
+
+Étape 3 - Quelles classes individus contribuent le plus aux axes :
+Regarder les graphes directement.
+
+ANALYSE DE L'ACP Économie 
+Étape 1 - Sélection des axes :
+Seuil d'inertie : 12.5 %
+Axes retenus : 1 2 
+
+Étape 2 - Quelles variables expliquent les axes :
+Seuil d'inertie expliquée : 12.5 %
+Seuil de cosinus carré : 0.125 %
+Variables retenues sur l'axe 1 :
+	(-):  
+	(+): ETTEFP1014 ETOQ14 ETGZ14 ETTEF114 ETGU14 
+Variables retenues sur l'axe 2 :
+	(-):  
+	(+): ETBE14 ETAZ14 
+Cf. les graphes des variables affichés.
+
+Étape 3 - Quelles classes individus contribuent le plus aux axes :
+Regarder les graphes directement.
+
+ANALYSE DE L'ACP Social 
+Étape 1 - Sélection des axes :
+Seuil d'inertie : 25 %
+Axes retenus : 1 2 
+
+Étape 2 - Quelles variables expliquent les axes :
+Seuil d'inertie expliquée : 25 %
+Seuil de cosinus carré : 0.25 %
+Variables retenues sur l'axe 1 :
+	(-): TP6013 
+	(+): PIMP13 
+Variables retenues sur l'axe 2 :
+	(-): 
+	(+): 
+Cf. les graphes des variables affichés.
+
+Étape 3 - Quelles classes individus contribuent le plus aux axes :
+Regarder les graphes directement.
